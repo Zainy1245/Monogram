@@ -18,3 +18,17 @@ window.addEventListener('scroll', () => {
     content.style.opacity = Math.max(contentOpacity, 0);
     content.style.transform = `translate(-50%, -50%) scale(${Math.max(contentScale, 0.5)})`; // Minimum scale of 0.5
 });
+
+function splitScroll(){
+
+    const controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+
+        duration:'100%',
+        triggerElement:'#f-imgdiv1',
+        triggerHook: 0
+    })
+    .addIndicators()
+    .addTo(controller);
+}
+splitScroll();
