@@ -145,7 +145,7 @@ height :100vh;
 
 background-color: rgb(96, 129, 158);
 display: block;
-
+position: relative;
 
 flex-direction: column;
 }
