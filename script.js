@@ -35,14 +35,22 @@ function splitScroll() {
 
 new ScrollMagic.Scene({
 
-duration:'200%',
-triggerElement:'#div-right3',
+duration:'300%',
+triggerElement:'#right-3',
 triggerHook :0
 })
-.setPin('#div-right3')
+.setPin('#right-3')
 .addIndicators()
 .addTo(controller)
+new ScrollMagic.Scene({
+
+    duration:'300%',
+    triggerElement:'#left-3',
+    triggerHook :0
+    })
+    .setPin('#left-3')
+    .addIndicators()
+    .addTo(controller)
 
 }
-
 splitScroll();
