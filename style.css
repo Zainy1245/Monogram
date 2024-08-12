@@ -1,0 +1,154 @@
+.about{
+    height: 300vh;
+    display: flex;
+
+}
+.about-title{
+
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+margin: 0!important;
+
+}
+.about-pages{
+ width: 50%;
+
+}
+.about-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-pages div:nth-child(1){
+
+    background-color: aquamarine;
+}
+.about-pages div:nth-child(2){
+
+    background-color: rgb(70, 175, 139);
+}
+.about-pages div:nth-child(3){
+
+    background-color: rgb(104, 47, 82);
+}
+.about-pages div:nth-child(4){
+
+    background-color: rgb(104, 47, 82);
+}
+ #div-left1{
+    background-color: rgb(13, 139, 248);
+   display:flex;
+   flex-direction: column;
+
+}
+
+ #abt-img1{
+
+    width: 200px;
+    margin-top: 10px;
+   margin-left: 590px;
+   
+}
+.about-title #abt-img2{
+        width: 200px;
+        margin-left: 590px;
+        margin-bottom: 90px;
+    }
+.about-pages #abt-img3{
+
+    flex-direction: row;
+    width: 200px;
+    margin-top: 200px;
+    margin-right: 585px;
+
+}
+.about-pages #abt-img4{
+
+    flex-direction: row;
+    width: 200px;
+    margin-right: 585px;
+    margin-bottom: 500px;
+}
+#div-right2{
+    
+width: 100vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+font-family: monospace;
+}
+#div-right2>p{
+font-size: 20px;
+    
+}
+#div-right2>h2{
+    font-family: monospace;
+    font-size: 35px;
+}
+
+#div-right3{
+  
+display:flex;
+width: 100vh;
+position: relative;
+background-color: black;
+flex-direction: column;
+
+}
+#div-right1{
+
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+}
+ #abt-img5{
+
+    flex-direction: row;
+    width: 200px;
+    margin-top: 210px;
+    margin-right: 585px;
+
+}
+ #abt-img6{
+
+    flex-direction: row;
+    width: 200px;
+    margin-right: 585px;
+    margin-bottom: 600px;
+}
+
+.footer{
+
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: blueviolet;
+}
+#div-left2{
+    
+    width: 100vh;
+    background-color:hotpink;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: monospace;
+    }
+    #div-left2>p{
+    font-size: 20px;
+        
+    }
+    #div-left2>h2{
+        font-family: monospace;
+        font-size: 35px;
+    }
