@@ -156,5 +156,23 @@ margin: 0!important;
 #right-3{
     background-color: rgb(38, 202, 207);
 }
-#img1{margin-left: 460px;}
-#img4{margin-right: 460px;}
+#img1{margin-left: 570px;}
+#img4{margin-right: 570px;}
+#img6{margin-right: 570px;}
+#img7{margin-left: 660px;}
+#img8{margin-left: 660px;}
+#img9{margin-left: 660px;}
+#img13{margin-right: 570px;}
+#text1{
+    display: flex;
+    flex-direction: column;
+}
+#text3{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 700px) {
+
+    
+
+}

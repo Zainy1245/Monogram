@@ -54,3 +54,19 @@ new ScrollMagic.Scene({
 
 }
 splitScroll();
+document.addEventListener("DOMContentLoaded", function() {
+    var controller = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({
+        triggerElement: ".fourth-Section",
+        triggerHook: 0.7,  // Trigger when the section is 70% in the viewport
+        duration: "50%"    // How long the scene should last
+    })
+    .on("enter", function () {
+        document.getElementById("scroll-text").textContent = "Next Level Porductivity Starts here";
+    })
+    .on("leave", function () {
+        document.getElementById("scroll-text").textContent = "More compatibility.";
+    })
+    .addTo(controller);
+});
