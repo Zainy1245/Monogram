@@ -70,3 +70,34 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .addTo(controller);
 });
+$(window).scroll(function(){
+    let $window = $(window),
+        $body = $('body'),   
+        $section = $('.section');
+    let scroll = $window.scrollTop() + ($window.height() / 3);
+    $section.each(function(){ 
+      if($(this).position().top <= scroll && $(this).position().top + $(this).height() > scroll){
+        $body.removeClass(function (index, css){
+          return (css.match (/(^|\s)color-\s+/g) || [].join(' '));
+        });
+        $('.section').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  }).scroll();
+  const images = document.querySelectorAll('.image');
+const container = document.querySelector('.container');
+
+container.addEventListener('scroll', () => {
+  images.forEach((image) => {
+    const imageTop = image.offsetTop;
+    const scrollPosition = container.scrollTop;
+    const windowHeight = container.offsetHeight;
+
+    if (scrollPosition + windowHeight > imageTop) {
+      image.classList.add('animate');
+    } else {
+      image.classList.remove('animate');
+    }
+  });
+});
