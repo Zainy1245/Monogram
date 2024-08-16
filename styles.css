@@ -308,7 +308,21 @@ margin: 0!important;
     flex-direction: column;
 }
 @media (max-width: 700px) {
-
+    #img1{margin-left: 100px;}
+    #img4{margin-right: 100px;}
+    #img6{margin-right: 100px;}
+    #img7{margin-left: 200px;}
+    #img8{margin-left: 200px;}
+    #img9{margin-left: 200px;}
+    #img13{margin-right: 100px;}
+    #text1{
+        display: flex;
+        flex-direction: column;
+    }
+    #text3{
+        display: flex;
+        flex-direction: column;
+    }
     
 
 }
@@ -410,3 +424,61 @@ html {
   p{
     color: aliceblue;
   }
+  @media screen and (max-width: 700px) {
+    .section {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .section > * {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .section-img-inner {
+        height: 20vh; /* Smaller height for the image */
+        width: 80%; /* Adjust the image width */
+        top: 50px; /* Adjust the positioning */
+        margin-left: 0; /* Center the image */
+        margin-bottom: 40px;
+    }
+
+    .section-body {
+        margin-top: 20px; /* Reduce margin-top */
+    }
+
+    .section-text {
+        padding: 4vw;
+    }
+
+    h2 {
+        font-size: 5vw; /* Adjust the heading size */
+    }
+
+    p {
+        font-size: 3vw; /* Adjust the paragraph size */
+    }
+    .SecondSection{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+        .content2{
+            display: flex;
+            text-align: center;
+            width: 60%;
+            margin-top: 300px;
+            flex-direction: column;
+        }
+        .content2 h2{
+        
+            color: #fff;
+            word-spacing: 2px;
+            font-size: 20px;
+        }
+        .content2 p {
+            line-height: 2;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+}
