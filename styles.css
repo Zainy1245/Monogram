@@ -307,6 +307,10 @@ margin: 0!important;
     display: flex;
     flex-direction: column;
 }
+#text1,#text2,#text3{
+
+    background-color: antiquewhite;
+}
 @media (max-width: 700px) {
     #img1{margin-left: 100px;}
     #img4{margin-right: 100px;}
@@ -481,4 +485,84 @@ html {
             font-size: 15px;
             letter-spacing: 2px;
         }
+}
+/*Fifth Section */
+.sixth-section{
+ overflow-y: hidden;
+    height: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #32227c;
+}
+.phone-container {
+    position: relative;
+    width: 300px; /* Adjust based on your phone PNG */
+    height: 600px; /* Adjust based on your phone PNG */
+}
+
+.phone-image {
+    margin-top: 100px;
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+.icon-slider {
+    position: absolute;
+    top: 30%; /* Adjust to position within the phone screen */
+    left: 5%; /* Adjust to position within the phone screen */
+    width: 70%; /* Adjust to fit within the screen */
+    height: 60%; /* Adjust to fit within the screen */
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.icon img {
+    width: 40%;
+    height: auto;
+}
+
+.icon-slider .icon:not(:first-child) {
+    transform: translateX(100%);
+}
+.overlay-text{
+  height:30vh;
+  background-color: #32227c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  justify-content: center;
+  text-align: center;
+margin-left: 24%;
+}
+.overlay-text>h2{
+    font-size: 35px;
+}
+.overlay-text>p{
+    color: #dbb4b4;
+    font-size: 18px;
+}
+.overlay-text>button{
+    background-color: rgb(233, 175, 160);
+    padding: 20px;
+    border-radius: 30px;
+}
+.overlay-text.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

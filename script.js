@@ -101,3 +101,28 @@ container.addEventListener('scroll', () => {
     }
   });
 });
+//for sliding phone images 
+let currentIndex = 0;
+const icons = document.querySelectorAll('.icon');
+const totalIcons = icons.length;
+
+function showNextIcon() {
+    icons[currentIndex].style.transform = 'translateX(-100%)';
+    currentIndex = (currentIndex + 1) % totalIcons;
+    icons[currentIndex].style.transform = 'translateX(0)';
+}
+
+setInterval(showNextIcon, 2500); // Change icon every 2 seconds
+/*for overlay text show*/
+document.addEventListener('scroll', function() {
+  const overlayText = document.querySelector('.overlay-text');
+  const overlayPosition = overlayText.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (overlayPosition < screenPosition) {
+      overlayText.classList.add('visible');
+  } else {
+      overlayText.classList.remove('visible');
+  }
+});
+
