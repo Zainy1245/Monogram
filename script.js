@@ -140,16 +140,23 @@ document.querySelector('.next-btn').addEventListener('click', function() {
 });
 document.querySelector('.testimonial-prev-btn').addEventListener('click', function() {
   document.querySelector('.testimonial-carousel').scrollBy({
-    left: -300, // Adjust this value based on the width of your cards
+    left: -1000, // Adjust this value based on the width of your cards
     behavior: 'smooth'
   });
 });
 
 document.querySelector('.testimonial-next-btn').addEventListener('click', function() {
   document.querySelector('.testimonial-carousel').scrollBy({
-    left: 300, // Adjust this value based on the width of your cards
+    left: 1000, // Adjust this value based on the width of your cards
     behavior: 'smooth'
   });
+});
+//for responsive nav bar 
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
 
 
