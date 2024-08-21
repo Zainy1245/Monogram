@@ -125,4 +125,31 @@ document.addEventListener('scroll', function() {
       overlayText.classList.remove('visible');
   }
 });
+document.querySelector('.prev-btn').addEventListener('click', function() {
+  document.querySelector('.carousel').scrollBy({
+    left: -300, // Adjust this value based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+
+document.querySelector('.next-btn').addEventListener('click', function() {
+  document.querySelector('.carousel').scrollBy({
+    left: 300, // Adjust this value based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+document.querySelector('.testimonial-prev-btn').addEventListener('click', function() {
+  document.querySelector('.testimonial-carousel').scrollBy({
+    left: -300, // Adjust this value based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+
+document.querySelector('.testimonial-next-btn').addEventListener('click', function() {
+  document.querySelector('.testimonial-carousel').scrollBy({
+    left: 300, // Adjust this value based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+
 
