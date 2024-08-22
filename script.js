@@ -158,5 +158,6 @@ const navLinks = document.querySelector('nav ul');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+//for how it works potential section
 
 
