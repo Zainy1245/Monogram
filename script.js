@@ -159,5 +159,36 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 //for how it works potential section
+function parallax () {
+  const aboutPSection = document.querySelector('.about-p');
+  const controller = new ScrollMagic.Controller();
 
+  new ScrollMagic.Scene({
+      duration:'500%', // Set duration to the height of the about section
+      triggerElement: '.about-potential',
+      triggerHook: 0
+  })
+  .setPin('.about-potential')
+  .addIndicators() // Optional: for debugging
+  .addTo(controller);
+}
+parallax();
+// for dowlaod page 
+// Function to show only the selected section
+function showSection(sectionId) {
+  // Get all content sections
+  var sections = document.querySelectorAll('.content-section');
+  
+  // Hide all sections
+  sections.forEach(function(section) {
+      section.classList.remove('active');
+  });
 
+  // Show the clicked section
+  document.getElementById(sectionId).classList.add('active');
+}
+
+// Set the default section to display
+window.onload = function() {
+  showSection('monogram-creator'); // Show the first section by default
+};
