@@ -1448,3 +1448,87 @@ display: none; /* Initially hidden */
       padding: 20px;
   }
 }
+.hero-section-workflow {
+    height: 50vh;
+    background-image: url('images/mono-bg1.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-download {
+    text-align: left;
+    color: white;
+    
+    padding: 20px;
+  }
+  
+  .overlay-download h1 {
+    font-size: 50px;
+  }
+  
+  .overlay-download p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .audio-workflow-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ text-align: center;
+  background-color:  #f3b335;
+  height: 40vh;
+}
+.content-audio{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 20vh;
+    margin: 40px auto;
+    flex-direction: column;
+}
+.content-audio>h2{
+    font-size: 30px;
+    color: #002060;
+
+}
+.content-audio>p{
+    font-size: 15px;
+    color: #002060;
+    width: 400px;
+    text-align: left;
+    margin: 0 auto;
+
+}
+.audio-workflow-header>img{
+    width: 30%;
+    height: auto;
+    margin-right: 100px;
+}
+.bottom-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 50px round;
+    background-color: #f3b335;
+    max-width: fit-content;
+    margin: 30px auto;
+}
+.audio-workflow-features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;  
+
+}
+.audio-workflow-features>img{
+    width: 30%;
+    height: auto;
+    margin-right: 100px;
+}
