@@ -1930,3 +1930,37 @@ height: 40vh;
   color: #1e2b4f;
   text-decoration: none;
 }
+/* Media query for screens 700px or less */
+@media (max-width: 700px) {
+  .blog-layout {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .featured-image {
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .image-overlay h2 {
+      font-size: 20px;
+      padding: 10px;
+  }
+
+  .blog-posts {
+      width: 100%;
+  }
+
+  .post {
+      padding: 15px;
+  }
+
+  .arrow-link {
+      font-size: 20px;
+  }
+
+  .see-all {
+      text-align: center;
+      margin-top: 10px;
+  }
+}
