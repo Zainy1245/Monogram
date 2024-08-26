@@ -1852,3 +1852,81 @@ height: 40vh;
     margin-right: 100px;
 
 }
+/*For blog page*/
+.blog-layout {
+  display: flex;
+  padding: 40px;
+}
+
+.featured-image {
+  position: relative;
+  width: 60%;
+  margin-right: 20px;
+}
+
+.featured-image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.image-overlay h2 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+}
+
+.blog-posts {
+  width: 40%;
+}
+
+.post {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #1e2b4f;
+  cursor: pointer;
+}
+.post h3:hover{
+  border-bottom: 1px solid black;
+}
+.post p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.arrow-link {
+  font-size: 24px;
+  color: #1e2b4f;
+  text-decoration: none;
+  float: right;
+}
+
+.see-all {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #1e2b4f;
+  text-decoration: none;
+}
