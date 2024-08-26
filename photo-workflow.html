@@ -11,18 +11,26 @@
 <header>
         <div class="container">
             <div class="logo">
-                <img src="images/icons.png" alt="Monogram Logo">
+              <a href="index.html"><img src="images/icons.png" alt="Monogram Logo"></a>
             </div>
             <nav>
-                <ul>
-                    <li><a href="how-it-works.html">How It Works</a></li> 
-                    <li><a href="#workflows">Workflows</a></li>
-                    <li><a href=".download">Download</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                </ul>
-            </nav>
+              <ul>
+                  <li><a href="how-it-works.html">How It Works</a></li>
+                  <li class="dropdown">
+                    <a href="#workflows">Workflows</a>
+                    <ul class="dropdown-content">
+                        <li><a href="audio-workflow.html">AUDIO</a></li>
+                        <li><a href="video-workflow.html">VIDEO</a></li>
+                        <li><a href="photo-workflow.html">PHOTO</a></li>
+                        
+                    </ul>
+                </li>
+                  <li><a href="download.html">Download</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="#support">Support</a></li>
+                  <li><a href="#shop">Shop</a></li>
+              </ul>
+          </nav>
             <div class="hamburger" id="hamburger">
               <span></span>
               <span></span>
@@ -41,10 +49,10 @@
   <nav class="internal-navbar">
     <nav class="internal-navbar">
       <ul>
-          <li><a href="/audio-workflow.html" onclick="showSection('monogram-creator')">Audio Console</a></li>
-          <li><a href="/photo-workflow.html" onclick="showSection('creator-beta')">Photo Console</a></li>
-          <li><a href="/video-workflow.html" onclick="showSection('creator-alpha')">Video Conosle</a></li>
-      </ul>
+        <li><a href="/audio-workflow.html">Audio Console</a></li>
+        <li><a href="/photo-workflow.html" >Photo Console</a></li>
+        <li><a href="/video-workflow.html" >Video Conosle</a></li>
+    </ul>
   </nav>
   </nav>
 <section class = "photo-workflow-header">

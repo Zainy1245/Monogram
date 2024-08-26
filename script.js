@@ -1,23 +1,4 @@
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
-    const heroSection = document.querySelector('.hero-section');
-    const content = document.querySelector('.content');
 
-    // Define the scroll range over which the effects will occur
-    const maxScroll = 300; // Adjust this value as needed
-
-    // Calculate brightness and clamp it to a maximum value
-    const brightnessValue = 1 + (scrollPosition / maxScroll);
-    //heroSection.style.filter = `brightness(${Math.min(brightnessValue, 2)})`;
-
-    // Calculate opacity and scale for the text content
-    const contentOpacity = 1 - (scrollPosition / maxScroll);
-    const contentScale = 1 - (scrollPosition / (2 * maxScroll)); // Shrinks the text slightly
-
-    // Apply the calculated opacity and scale, clamping them to prevent negative values
-    content.style.opacity = Math.max(contentOpacity, 0);
-    content.style.transform = `translate(-50%, -50%) scale(${Math.max(contentScale, 0.5)})`; // Minimum scale of 0.5
-});
 
 
 function splitScroll() {
@@ -30,7 +11,7 @@ function splitScroll() {
        triggerHook: 0
    })
    .setPin('.about-title')
-   .addIndicators() // Optional: for debugging
+   
    .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -107,9 +88,9 @@ const icons = document.querySelectorAll('.icon');
 const totalIcons = icons.length;
 
 function showNextIcon() {
-    icons[currentIndex].style.transform = 'translateX(-100%)';
+   // icons[currentIndex].style.transform = 'translateX(-100%)';
     currentIndex = (currentIndex + 1) % totalIcons;
-    icons[currentIndex].style.transform = 'translateX(0)';
+    //icons[currentIndex].style.transform = 'translateX(0)';
 }
 
 setInterval(showNextIcon, 2500); // Change icon every 2 seconds
@@ -125,6 +106,7 @@ document.addEventListener('scroll', function() {
       overlayText.classList.remove('visible');
   }
 });
+
 document.querySelector('.prev-btn').addEventListener('click', function() {
   document.querySelector('.carousel').scrollBy({
     left: -300, // Adjust this value based on the width of your cards
@@ -169,7 +151,7 @@ function parallax () {
       triggerHook: 0
   })
   .setPin('.about-potential')
-  .addIndicators() // Optional: for debugging
+
   .addTo(controller);
 }
 parallax();
@@ -192,3 +174,21 @@ function showSection(sectionId) {
 window.onload = function() {
   showSection('monogram-creator'); // Show the first section by default
 };
+//for navbar dropdown click 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.dropdown');
+
+  dropdown.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent the default action of the link
+      this.classList.toggle('open'); // Toggle the 'open' class on click
+  });
+
+  // Close dropdown if clicked outside
+  document.addEventListener('click', function (e) {
+      if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+      }
+  });
+});
+

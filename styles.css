@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    /* Ensure the page is tall enough to scroll */
     overflow-x: hidden;
 }
@@ -63,6 +63,38 @@ body, html {
     padding: 20px 30px;
     border-radius: 30px;
 }
+/* Media Query for responsiveness on screens 700px or less */
+@media (max-width: 700px) {
+  
+
+  .content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 30px; /* Reduce font size for h1 */
+    letter-spacing: 1.5px; /* Adjust letter spacing */
+  }
+
+  .content h2 {
+    font-size: 24px; /* Reduce font size for h2 */
+    margin-top: 60px; /* Adjust margin for smaller screens */
+    letter-spacing: 1.5px;
+  }
+
+  .content p {
+    font-size: 16px; /* Reduce font size for paragraph */
+    letter-spacing: 1px; /* Adjust letter spacing */
+  }
+
+  #btn1, #btn2 {
+    padding: 15px 25px; /* Reduce padding for buttons */
+    font-size: 14px; /* Reduce font size for button text */
+  }
+}
 header {
     background-color: #1a1a1a;
     padding: 10px 0;
@@ -113,6 +145,59 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+  position: relative; /* Ensure dropdown is positioned relative to parent */
+}
+
+nav ul li {
+  margin-left: 30px;
+  position: relative; /* Enable positioning of the dropdown */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 50;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown styles */
+/* Dropdown hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e4dbdb;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+  list-style: none;
+  padding: 10px 0;
+}
+.dropdown-content li {
+  padding: 10px;
+  border-bottom: 2px solid;
+}
+
+.dropdown-content li a {
+  color:black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #444;
+}
+/* Add a class to show the dropdown */
+.dropdown.open .dropdown-content {
+  display: block;
+}
 .hamburger {
     display: none;
     flex-direction: column;
@@ -126,7 +211,7 @@ nav ul li a:hover {
     margin: 5px 0;
     transition: 0.4s;
 }
-/* Responsive Styles */
+
 /* Responsive Styles */
 @media (max-width: 700px) {
     nav ul {
@@ -152,6 +237,14 @@ nav ul li a:hover {
     nav ul li {
         padding: 10px 0; /* Adds space between the items */
     }
+    .content2{
+      display: flex;
+      text-align: center;
+      width: 60%;
+     margin-bottom: 400px;
+     justify-content: top;
+      flex-direction: column;
+  }
 }
 /*2nd Section*/
 .SecondSection{
@@ -166,7 +259,7 @@ text-align: center;
     display: flex;
     text-align: center;
     width: 60%;
-    margin-top: 300px;
+    margin-top: 100px;
     flex-direction: column;
 }
 .content2 h2{
@@ -213,7 +306,7 @@ margin: 0!important;
 }
 .about-pages div:nth-child(1){
 
-    background-color: rgb(43, 175, 25);
+    background-color: rgb(219, 196, 168);
 }
 .about-pages div:nth-child(2){
 
@@ -354,10 +447,14 @@ margin: 0!important;
     display: flex;
     flex-direction: column;
 }
-#text1,#text2,#text3{
-
-    background-color: antiquewhite;
+#text1>h2,#text2>h2,#text3>h2{
+color: #002060;
+    
 }
+#text1>p,#text2>p,#text3>p{
+  color: #002060;
+      
+  }
 @media (max-width: 700px) {
     #img1{margin-left: 100px;}
     #img4{margin-right: 100px;}
@@ -624,6 +721,7 @@ margin-left: 24%;
     background-color: rgb(233, 175, 160);
     padding: 20px;
     border-radius: 30px;
+    margin-bottom: 100px;
 }
 .overlay-text.hidden {
     opacity: 0;
@@ -634,6 +732,26 @@ margin-left: 24%;
 .visible {
     opacity: 1;
     transform: translateY(0);
+}
+@media (max-width: 700px) {
+  .overlay-text {
+    width: 100%; /* Set width to 100% for better responsiveness */
+    margin-left: 0; /* Remove margin for smaller screens */
+    padding: 10px; /* Add some padding */
+  }
+
+  .overlay-text > h2 {
+    font-size: 28px; /* Reduce font size for h2 */
+  }
+
+  .overlay-text > p {
+    font-size: 16px; /* Reduce font size for paragraph */
+  }
+
+  .overlay-text > button {
+    padding: 15px; /* Reduce padding for button */
+    font-size: 16px; /* Optionally reduce font size for button text */
+  }
 }
 /*for slider */
 /* Basic Reset */
@@ -890,6 +1008,50 @@ background-color: #dfcaca;
   .testimonial-prev-btn:hover, .testimonial-next-btn:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
+  @media (max-width: 700px) {
+    .testimonial-carousel {
+      width: 100%; /* Full width for the carousel */
+      padding: 0 10px; /* Padding for better mobile view */
+    }
+  
+    .testimonial-card {
+      min-width: 100%; /* Card takes full width */
+      margin: 0; /* Remove left margin */
+    }
+  
+    .testimonial-card img {
+      margin-right: 0; /* Center image by removing right margin */
+      margin-bottom: 10px; /* Slightly reduce bottom margin */
+    }
+  
+    .testimonial-card p {
+      width: 100%; /* Text occupies full width */
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  
+    .testimonial-card h3 {
+      font-size: 18px; /* Adjust font size for headers */
+    }
+  
+    .testimonial-card span {
+      font-size: 12px; /* Smaller font size for span text */
+    }
+  
+    /* Adjust button placement */
+    .testimonial-prev-btn {
+      left: 2%; /* Adjust left position for smaller screens */
+    }
+  
+    .testimonial-next-btn {
+      right: 2%; /* Adjust right position for smaller screens */
+    }
+  
+    /* Reduce button size on smaller screens */
+    .testimonial-prev-btn,
+    .testimonial-next-btn {
+      padding: 8px;
+    }
+  }
   /*AsSeenOn*/
   .asSeenon{
     overflow-y: hidden;
@@ -1124,6 +1286,33 @@ background-color: #dfcaca;
   .hero-button:hover {
     background-color: #FADFD4; /* Change on hover */
     color: #2B365D;
+  }
+  @media (max-width: 700px) {
+    .hero-section-explore {
+      padding-right: 20px; /* Reduce right padding */
+      justify-content: center; /* Center text on smaller screens */
+      padding-left: 20px; /* Add some left padding for better spacing */
+    }
+  
+    .hero-content-explore {
+      max-width: 100%; /* Full width for smaller screens */
+      text-align: center; /* Center-align text */
+    }
+  
+    .hero-content-explore h1 {
+      font-size: 28px; /* Reduce font size for h1 */
+      margin-bottom: 15px;
+    }
+  
+    .hero-content-explore p {
+      font-size: 16px; /* Reduce font size for paragraph */
+      margin-bottom: 20px;
+    }
+  
+    .hero-button-explore {
+      padding: 12px 25px; /* Reduce padding for the button */
+      font-size: 16px; /* Smaller font size for the button */
+    }
   }
   /*Page "How it works styles"*/
   /*Header */
