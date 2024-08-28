@@ -146,11 +146,11 @@ function parallax () {
   const controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
-      duration:'500%', // Set duration to the height of the about section
-      triggerElement: '.about-potential',
+      duration:'200%', // Set duration to the height of the about section
+      triggerElement: '.about-img',
       triggerHook: 0
   })
-  .setPin('.about-potential')
+  .setPin('.about-p')
 
   .addTo(controller);
 }

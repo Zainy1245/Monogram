@@ -179,11 +179,16 @@ nav ul li a:hover {
   z-index: 1;
   list-style: none;
   padding: 10px 0;
+  position: absolute; /* Position the dropdown absolutely within its container */
+  z-index: 1000; /* High z-index to ensure it's on top */
 }
 .dropdown-content li {
   padding: 10px;
   border-bottom: 2px solid;
+  position: relative; 
+  z-index: 1001; /* Slightly higher than the dropdown container */
 }
+
 
 .dropdown-content li a {
   color:black;
@@ -1397,7 +1402,7 @@ color:#002060;
   max-width: 100%; /* Prevents overflow */
 }
 .unlock-potential{
-  height: 300vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1419,29 +1424,46 @@ margin-left: 100px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color:#002060;
 }
+
 .about-p{
-  height: 300vh;
-  display: flex;
+height: 300vh;
+display: flex;
+background-color:#efc2b3
+;
+
 }
 .about-img{
+
   width: 50%;
   height: 100vh;
-  
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 .about-img>img{
-  width: 70%;
+  width:  90%;
   height: auto;
-  object-fit: cover;
-  
+top: 100px;
+left: 100px;
 }
 .about-potential{
   width: 50%;
-  height: 100vh;
-}.about-potential div{
+}
+.about-potential div{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+.about-potential div>p{
+  color: #002060;
+  width: 70%;
+  font-size: 20px;
+}
+.about-potential div>h2{
+  color: #002060;
 }
 /*for donaload page*/
 .hero-section-download {
@@ -1449,7 +1471,6 @@ color:#002060;
   background-image: url('images/sec-3-bg.webp');
   background-size: cover;
   background-position: center;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

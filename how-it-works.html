@@ -64,16 +64,29 @@
             <h2>Unlock the Full Potential of Creative Software</h2>
             <p>Creative Console integrates directly into industry leading editing software creating a powerful software ecosystem for every aspect of your workflow.<br> Monogram Creator app supports both native and universal compatibility.</p>
         </div>
-        <section class="about-p">
-        <div class = about-potential>
-            <div>COntent 1</div>
-            <div>Content 2</div>
-            <div>content 3</div>
-        </div>
-        <div class="about-img">
-        <img src="images/sec4-img.webp">    
-        </div>
-        </section>
+        
+</section>
+<section class="about-p">
+  
+<div class = about-potential>
+    <div> 
+      <h2>NATIVE MOBILITY</h2>
+      <p>Native integrations hook directly into software for the greatest level of control and the smoothest performance. Unlike hotkeys, Creative Console gives you the most engaging tactile experience that connects you to your work. Make adjustments incrementally, or quickly and smoothly increase values while focusing on the result in front of you. Native compatibility includes Adobe Creative Suite, Unreal Engine, and Capture One Pro.</p>
+    </div>
+    <div> 
+      <h2>UNIVERAL COMPATIBILITY</h2>
+      <p>Use Monogram Creative Console with any software. Creative Console can control virtually any software so you can control your favourite app, even if it’s not officially supported, by customizing each module via universal input modes like: keyboard shortcuts, MIDI, mouse clicks, and joystick actions. Universal Compatibility works great with apps like Ableton Live, Logic, Chrome, Spotify, and more..</p>
+    </div>
+    <div> 
+      <h2>QUESTIONS?</h2>
+      <p>If you have a suggestion for software integration or don’t see your favorite editing software listed, we’d love to hear from you! We’re always just a click away.</p>
+      <a href="#" class="hero-button-explore">CONTACT US</a>
+    </div>
+</div>
+<div class="about-img">
+  <img src="images/sec4-img.webp">  
+  </div>
+
 </section>
     <section class="hero-section-explore">
         <div class="hero-content-explore">
@@ -140,7 +153,7 @@
       <p>&copy; Monogram 2024</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+
   
            <!-- Core ScrollMagic Library -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
@@ -164,11 +177,38 @@
             triggerHook: 0
         })
         .setPin('.about-img') // Pin the image section
-        .addIndicators() // Optional: for debugging
+        
         .addTo(controller1);
     }
     parallax();
+  
              </script>
+             <script>
+              const hamburger = document.getElementById('hamburger');
+              const navLinks = document.querySelector('nav ul');
+              
+              hamburger.addEventListener('click', () => {
+                  navLinks.classList.toggle('active');
+              });
+              
+              document.addEventListener('DOMContentLoaded', function () {
+                const dropdown = document.querySelector('.dropdown');
+              
+                dropdown.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent the default action of the link
+                    this.classList.toggle('open'); // Toggle the 'open' class on click
+                });
+              
+                // Close dropdown if clicked outside
+                document.addEventListener('click', function (e) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('open');
+                    }
+                });
+              });
+              
+              </script>
+             
   </body>
   </html>
   

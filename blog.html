@@ -232,17 +232,30 @@
 </footer>
 
 
-         <!-- Core ScrollMagic Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    
-    <!-- Optional: jQuery (if you're using it) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <!-- Optional: GSAP for animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
-    
-    <!-- Optional: Debugging tool -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-           <script src="script.js"></script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav ul');
+  
+  hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdown = document.querySelector('.dropdown');
+  
+    dropdown.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent the default action of the link
+        this.classList.toggle('open'); // Toggle the 'open' class on click
+    });
+  
+    // Close dropdown if clicked outside
+    document.addEventListener('click', function (e) {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+        }
+    });
+  });
+  
+  </script>
 </body>
 </html>
