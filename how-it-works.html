@@ -46,7 +46,34 @@
     <h2>Get Started in 3 Easy Steps</h2>
     <p>Creative Console provides a fast and simple set up with magnetically connecting modules and a user-friendly app.</p>
 </div>
-
+<div class="carousel-container">
+  <button class="prev-btn">&#10094;</button>
+  <div class="carousel">
+    <div class="card card1">
+      <div class="content-container">
+        <h2>Start Connecting</h2>
+        <p>Simply plug in the Core and magnetically snap modules together, pin to pad. The LED halos light up when connected properly. Keep the layout simple or get creative and wrap it around your keyboard or graphics tablet!</p>
+      
+      </div>
+    </div>
+    <div class="card card2">
+      <div class="content-container">
+        <h2>Start Creating</h2>
+        <p>Enhance your editing workflow with intuitive controls and precision using Creative Console...</p>
+        <a href="#" class="learn-more">SEE USER GUIDE</a>
+      </div>
+    </div>
+    <div class="card card3">
+      <div class="content-container">
+        <h2>GRAPHIC DESIGN</h2>
+        <p>Take your creative projects to the next level with customizable tools tailored to your workflow...</p>
+        <a href="#" class="learn-more">LEARN MORE</a>
+      </div>
+    </div>
+   
+  </div>
+  <button class="next-btn">&#10095;</button>
+</div>
 </section>
 <section class = "personalize">
     <div class = "text-content-personalize">
@@ -206,7 +233,19 @@
                     }
                 });
               });
-              
+              document.querySelector('.prev-btn').addEventListener('click', function() {
+  document.querySelector('.carousel').scrollBy({
+    left: -300, // Adjust this value based on the width of your cards
+    behavior: 'smooth'
+  });
+});
+
+document.querySelector('.next-btn').addEventListener('click', function() {
+  document.querySelector('.carousel').scrollBy({
+    left: 300, // Adjust this value based on the width of your cards
+    behavior: 'smooth'
+  });
+});
               </script>
              
   </body>

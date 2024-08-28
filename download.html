@@ -197,7 +197,24 @@
   var navbar = document.querySelector(".internal-navbar");
   navbar.classList.toggle("show");  // Add or remove the "show" class
 }
+ // Function to show only the selected section
+function showSection(sectionId) {
+  // Get all content sections
+  var sections = document.querySelectorAll('.content-section');
   
+  // Hide all sections
+  sections.forEach(function(section) {
+      section.classList.remove('active');
+  });
+
+  // Show the clicked section
+  document.getElementById(sectionId).classList.add('active');
+}
+
+// Set the default section to display
+window.onload = function() {
+  showSection('monogram-creator'); // Show the first section by default
+}; 
   </script>
 </body>
 </html>
