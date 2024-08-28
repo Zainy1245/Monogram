@@ -45,15 +45,16 @@
       </div>
   </section>
 
+
   <nav class="internal-navbar">
-    <nav class="internal-navbar">
-      <ul>
-          <li><a href="#monogram-creator" onclick="showSection('monogram-creator')">Monogram Creator</a></li>
-          <li><a href="#creator-beta" onclick="showSection('creator-beta')">Creator Beta</a></li>
-          <li><a href="#creator-alpha" onclick="showSection('creator-alpha')">Creator Alpha</a></li>
-      </ul>
-  </nav>
-  </nav>
+    <div class="hamburger-int" onclick="toggleNavbar()">&#9776;</div>
+    <ul>
+        <li><a href="#monogram-creator" onclick="showSection('monogram-creator')">Monogram Creator</a></li>
+        <li><a href="#creator-beta" onclick="showSection('creator-beta')">Creator Beta</a></li>
+        <li><a href="#creator-alpha" onclick="showSection('creator-alpha')">Creator Alpha</a></li>
+    </ul>
+</nav>
+  
 
   <section id="monogram-creator" class="content-section">
     <h2>MONOGRAM CREATOR</h2>
@@ -192,6 +193,10 @@
         }
     });
   });
+  function toggleNavbar() {
+  var navbar = document.querySelector(".internal-navbar");
+  navbar.classList.toggle("show");  // Add or remove the "show" class
+}
   
   </script>
 </body>

@@ -140,21 +140,7 @@ const navLinks = document.querySelector('nav ul');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
-//for how it works potential section
-function parallax () {
-  const aboutPSection = document.querySelector('.about-p');
-  const controller = new ScrollMagic.Controller();
 
-  new ScrollMagic.Scene({
-      duration:'200%', // Set duration to the height of the about section
-      triggerElement: '.about-img',
-      triggerHook: 0
-  })
-  .setPin('.about-p')
-
-  .addTo(controller);
-}
-parallax();
 // for dowlaod page 
 // Function to show only the selected section
 function showSection(sectionId) {
