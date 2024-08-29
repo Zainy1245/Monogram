@@ -2307,3 +2307,87 @@ height: 40vh;
       margin-top: 10px;
   }
 }
+/*for shop cards*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1200px; /* adjust as necessary */
+}
+
+.card-shop {
+  width: 48%; /* Adjust to fit 2 cards per row */
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  height: 69vh;
+}
+
+.card-image {
+  position: relative;
+
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+.card-image:hover{
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+.label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f90; /* Orange color for "PRE-ORDER" */
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+  background-color: #fff; /* Ensure text is on a visible background */
+}
+
+.card-content h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.sold-out {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #c00;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+  }
+
+  .card-content h3 {
+      font-size: 1.2em;
+  }
+
+  .card-content p {
+      font-size: 0.9em;
+  }
+}
