@@ -228,7 +228,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 });
-
+// JavaScript to prevent dropdown toggle from interfering with links
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+  item.addEventListener('click', function(e) {
+    window.location.href = this.href;
+  });
+});
 </script>
 
           

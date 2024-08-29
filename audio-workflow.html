@@ -28,7 +28,7 @@
                   <li><a href="download.html">Download</a></li>
                   <li><a href="blog.html">Blog</a></li>
                   <li><a href="#support">Support</a></li>
-                  <li><a href="#shop">Shop</a></li>
+                  <li><a href="">Shop</a></li>
               </ul>
           </nav>
             <div class="hamburger" id="hamburger">
@@ -250,6 +250,12 @@
         }
     });
   });
+  // JavaScript to prevent dropdown toggle from interfering with links
+document.querySelectorAll('.dropdown-content a').forEach(item => {
+  item.addEventListener('click', function(e) {
+    window.location.href = this.href;
+  });
+});
   
   </script>
 </body>
