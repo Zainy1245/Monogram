@@ -195,9 +195,7 @@ nav ul li a:hover {
   display: block;
 }
 
-.dropdown-content li a:hover {
-  background-color: #444;
-}
+
 /* Add a class to show the dropdown */
 .dropdown.open .dropdown-content {
   display: block;
@@ -1572,20 +1570,22 @@ left: 100px;
   justify-content: center;
 }
 
-.overlay-download {
+.overlay-download-d {
   text-align: left;
-  color: white;
+  color: rgb(44, 42, 42);
   
   padding: 20px;
 }
 
-.overlay-download h1 {
+.overlay-download-d>h1 {
   font-size: 50px;
+  color: black;
 }
 
-.overlay-download p {
+.overlay-download-d>p {
   font-size: 1.5rem;
   margin-top: 10px;
+  color: black;
 }
 .internal-navbar {
   background-color: #f0f0f0;
@@ -1827,9 +1827,10 @@ display: none; /* Initially hidden */
     font-size: 50px;
   }
   
-  .overlay-download p {
+  .overlay-download>p {
     font-size: 1.5rem;
     margin-top: 10px;
+    color: white;
   }
   .audio-workflow-header{
     display: flex;
@@ -1909,7 +1910,7 @@ display: none; /* Initially hidden */
       text-align: center;
   }
 
-  .overlay-download p {
+  .overlay-download>p {
       font-size: 1.2rem;
       text-align: center;
   }
@@ -2333,7 +2334,7 @@ height: 40vh;
 .card-shop {
   width: 48%; /* Adjust to fit 2 cards per row */
   margin-bottom: 20px;
-  background-color: #f8f8f8;
+ 
   overflow: hidden;
   border-radius: 8px;
   position: relative;
@@ -2395,6 +2396,23 @@ height: 40vh;
       width: 100%; /* Full width on smaller screens */
       margin-bottom: 20px;
   }
+  .card-shop{
+    height: 60vh;
+  }
+
+  .card-content h3 {
+      font-size: 1.2em;
+  }
+
+  .card-content p {
+      font-size: 0.9em;
+  }
+}
+@media (max-width: 768px) {
+  .card-shop {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+  }
 
   .card-content h3 {
       font-size: 1.2em;
@@ -2405,3 +2423,40 @@ height: 40vh;
   }
 }
 
+@media (max-width: 700px) {
+  .card-shop {
+      width: 100%; /* Full width on screens less than 700px */
+      margin-bottom: 20px;
+  }
+}
+/*for shop page header*/
+.hero-section-shop {
+  height: 500px;
+  background-image: url('images/sec-3-bg.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.overlay-shop {
+  text-align: top;
+  color: rgb(44, 42, 42);
+  
+  padding: 20px;
+}
+
+.overlay-shop>h1 {
+  font-size: 50px;
+  color: black;
+}
+
+.overlay-shop>p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: black;
+}
+
+ 
