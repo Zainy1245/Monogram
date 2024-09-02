@@ -122,14 +122,14 @@ document.querySelector('.next-btn').addEventListener('click', function() {
 });
 document.querySelector('.testimonial-prev-btn').addEventListener('click', function() {
   document.querySelector('.testimonial-carousel').scrollBy({
-    left: -1000, // Adjust this value based on the width of your cards
+    left: -400, // Adjust this value based on the width of your cards
     behavior: 'smooth'
   });
 });
 
 document.querySelector('.testimonial-next-btn').addEventListener('click', function() {
   document.querySelector('.testimonial-carousel').scrollBy({
-    left: 1000, // Adjust this value based on the width of your cards
+    left: 400, // Adjust this value based on the width of your cards
     behavior: 'smooth'
   });
 });
