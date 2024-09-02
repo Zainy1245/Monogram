@@ -1381,6 +1381,36 @@ background-color: #E5B6A0
     .subscribe-column input[type="email"] {
       width: 100%;
     }
+    .subscribe-column input[type="email"] {
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      width: 70%;
+      margin: 0 auto;
+    }
+    
+    .subscribe-column button {
+      padding: 10px 20px;
+      background-color: #FADFD4;
+      color: #2B365D;
+      border: none;
+      width: 75%;
+      margin: 0 auto;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .subscribe-column p {
+      margin-bottom: 30px;
+      font-size: 14px;
+      width: 90%;
+      
+    }
+    .subscribe-column>h4{
+width: 70%;
+margin: 0 auto;
+
+    }
   }
   /*Explore Section*/
 /* Hero Section */
@@ -1769,8 +1799,28 @@ left: 100px;
 
 /* Responsive Styles for Screens 700px or Less */
 @media screen and (max-width: 700px) {
+  .hero-section-download {
+    height: 70vh;
+    background-image: url('images/sec-3-bg.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay-download-d>h1 {
+    font-size: 30px;
+    color: black;
+  }
+  
+  .overlay-download-d>p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+  }
   .hamburger-int {
-    display: block; /* Show the hamburger icon on smaller screens */
+    display: block;
+    margin-right: 20px; /* Show the hamburger icon on smaller screens */
   }
 
   .internal-navbar ul {
