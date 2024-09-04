@@ -3,9 +3,14 @@ body, html {
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    /* Ensure the page is tall enough to scroll */
-    overflow-x: hidden;
+    
 }
-
+@media (max-width:100px){
+.hero-section{
+  width: 150%;
+}
+   
+}
 .hero-section {
     position: relative;
     height: 100vh;
@@ -216,6 +221,13 @@ nav ul li a:hover {
 
 /* Responsive Styles */
 @media (max-width: 700px) {
+  header {
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    background-color:#1a2456;
+    z-index: 10;
+}
     nav ul {
         display: none;
         flex-direction: column;
@@ -481,7 +493,9 @@ background-color: #E5B6A0;
 .about-pages-2>h2{
   color: #1a2456;
 }
+
 @media (max-width: 700px) {
+  
     #img1{margin-left: 10px;}
     #img4{margin-right: 10px;}
     #img6{margin-right: 5px;}
@@ -498,8 +512,25 @@ background-color: #E5B6A0;
         flex-direction: column;
     }
     
+    .about-title img{
 
+      width: 50px;
+  }
+  .about-pages img{
+      width: 50px;
+  }
+  .about-pages-2 img{
+      width: 50px;
+  }
+  .about-3{
+      height: 200vh;
+      display: flex;
+  }
+  #right-6 >img{
+    width: 50px;
 }
+}
+
 /*fourth ection*/
 .fourth-Section{
 
@@ -517,7 +548,14 @@ background-color:#1a2456;
     word-spacing: 2px;
     font-size: 50px;
 }
-
+@media (max-width:700px){
+  .fourth-Section>h2{
+    margin-bottom: 100px;
+    color: white;
+    word-spacing: 2px;
+    font-size: 20px;
+}
+}
 #scroll-text {
     font-size: 2rem;
     transition: font-size 0.5s ease, color 0.5s ease;
@@ -760,11 +798,19 @@ margin-left: 24%;
     opacity: 1;
     transform: translateY(0);
 }
-@media (max-width: 700px) {
+@media(max-width:1200px){
   .overlay-text {
     width: 90%; /* Set width to 100% for better responsiveness */
     margin-left: 0; /* Remove margin for smaller screens */
     padding: 10px; /* Add some padding */
+  }
+}
+@media (max-width: 700px) {
+  .overlay-text {
+    width: 80%; /* Set width to 100% for better responsiveness */
+    margin-left: 0; /* Remove margin for smaller screens */
+    padding: 10px;
+    margin-top: 100px; /* Add some padding */
   }
   .icon-slider {
     width: 60%;
@@ -776,14 +822,14 @@ margin-left: 24%;
   .overlay-text > p {
     font-size: 16px;
     width: 90%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     /* Reduce font size for paragraph */
   }
 
   .overlay-text > button {
     padding: 15px; /* Reduce padding for button */
     font-size: 16px; /* Optionally reduce font size for button text */
-     margin-bottom: 300px;
+     
   }
   .heading2{
     height:30vh;
@@ -1230,7 +1276,7 @@ background-color: #E5B6A0
   }
   
   /* Responsive layout for smaller screens */
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     .image-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -1249,7 +1295,7 @@ background-color: #E5B6A0
     width: 300px;
   }
   .asSeenon{
-    width: 390px;
+    width: 100%;
   }
 }
   
@@ -2074,8 +2120,9 @@ display: none; /* Initially hidden */
   }
 
   .content-audio {
-      width: 90%;
+      width: 70%;
       height: auto;
+      margin-top: 60%;
   }
 
   .content-audio > h2 {
@@ -2088,7 +2135,9 @@ display: none; /* Initially hidden */
       width: 100%;
       text-align: center;
   }
-
+#p-img{
+  width: 50%;
+}
   .overlay-download h1 {
       font-size: 36px;
       text-align: center;
@@ -2099,8 +2148,11 @@ display: none; /* Initially hidden */
       text-align: center;
   }
 
-  .bottom-icons {
-      margin-top: 50px;
+  .bottom-icons{
+      margin-top: 50%;
+  }
+  .btm-icons>img{
+    width: 200px;
   }
   .photo-workflow-header {
     flex-direction: column;
@@ -2137,12 +2189,14 @@ display: none; /* Initially hidden */
     height: auto;
     margin: 100px auto 100px 200px;
 }
+
 /* Responsive Media Queries for 700px or Less */
-@media (max-width: 700px) {
+@media (min-width: 100px) {
   .audio-workflow-features {
       flex-direction: column;
       padding: 20px;
   }
+ 
 
   .audio-workflow-features > img {
       width: 70%;
