@@ -6,11 +6,15 @@ body, html {
     
 }
 @media (max-width:100px){
-.hero-section{
-  width: 150%;
+.hero-section,.SecondSection,.about,.fourth-Section,.fifth-section,.sixth-section,.features,.testimonial,.asSeenon,.hero-button-explore,.footer{
+  width: 300px;
 }
-   
 }
+@media (max-width:60px){
+  .hero-section,.SecondSection,.about,.fourth-Section,.fifth-section,.sixth-section,.features,.testimonial{
+    max-width: 300px;
+  }
+  }
 .hero-section {
     position: relative;
     height: 100vh;
@@ -368,10 +372,7 @@ margin: 0!important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.about-pages-2 div:nth-child(1){
 
-   
-}
 .about-pages-2 div:nth-child(2){
 
     background-color: rgb(16, 99, 70);
@@ -480,10 +481,12 @@ margin: 0!important;
 }
 #text1>h2,#text3>h2{
 color: #002060;
+font-size: 2vw;
     
 }
 #text1>p,#text3>p{
   color: #002060;
+  font-size: 1.5vw;
       
   }
   #text1,#text2,#text3{
@@ -493,7 +496,16 @@ background-color: #E5B6A0;
 .about-pages-2>h2{
   color: #1a2456;
 }
+@media (max-width:800px){
 
+  #img1{margin-left: 200px;}
+  #img4{margin-right: 200px;}
+  #img6{margin-right: 200px;}
+  #img7{margin-left: 200px;}
+  #img8{margin-left: 200px;}
+  #img9{margin-left: 200px;}
+  #img13{margin-right: 200px;}
+}
 @media (max-width: 700px) {
   
     #img1{margin-left: 10px;}
@@ -1298,13 +1310,14 @@ background-color: #E5B6A0
     width: 100%;
   }
 }
+
   
   /* Customizing the rows for the layout as specified */
   .image-grid img:nth-child(7), .image-grid img:nth-child(8) {
     grid-column: span 3;
     justify-self: center;
   }
-  
+ 
 /*Footer*/
 /* Footer */
 .footer {
