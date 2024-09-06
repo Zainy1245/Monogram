@@ -55,27 +55,29 @@ body, html {
 .content h2 {
 
     color: #E5B6A0;
-    font-size: 4vmin;
+    font-size: 5vmin;
     margin-top: 120px;
    letter-spacing: 3px;
 }
 .content p{
     color: #E5B6A0;
 
-    font-size: 1.5vw;
+    font-size: 3vw;
     letter-spacing:2px;
 }
 #btn1{
 
     background-color: #E5B6A0;
-    padding: 1.5vw 2vw;
+    padding: 1.5vmin 2vmin;
     border-radius: 30px;
+    font-size: 2vmin;
 }
 #btn2{
 
     background-color:#E5B6A0;
     padding: 1.5vw 2vw;
     border-radius: 30px;
+    font-size: 2vmin;
 }
 
 header {
@@ -472,7 +474,7 @@ color: #002060;
 
 font-size: 3vmax;
 
-font-size: 2vw;
+font-size: 1.5vmax;
 
     
 }
@@ -761,6 +763,7 @@ background-color: #1a2456;
   flex-direction: column;
   align-items: center;
 margin: 0 auto;
+margin-top: 100px;
   justify-content: center;
   text-align: center;
   
@@ -808,7 +811,7 @@ width: 50%;
 @media (max-width: 700px) {
   .overlay-text {
     width: 80%; /* Set width to 100% for better responsiveness */
-    margin-left: 0; /* Remove margin for smaller screens */
+    margin-left:40px ; /* Remove margin for smaller screens */
     padding: 10px;
     margin-top: 100px; /* Add some padding */
   }
@@ -816,11 +819,11 @@ width: 50%;
     width: 60%;
   }
   .overlay-text > h2 {
-    font-size: 28px; /* Reduce font size for h2 */
+    font-size: 4vmin; /* Reduce font size for h2 */
   }
 
   .overlay-text > p {
-    font-size: 16px;
+    font-size: 3vmin;
     width: 90%;
     margin-bottom: 50px;
     /* Reduce font size for paragraph */
@@ -831,14 +834,14 @@ width: 50%;
   .overlay-text{
 height: 50vh;
 margin: 0 auto;
-width: 50%;
+width: 70%;
   }
 }
 
 
   .overlay-text > button {
-    padding: 15px; /* Reduce padding for button */
-    font-size: 16px; /* Optionally reduce font size for button text */
+    padding: 10px; /* Reduce padding for button */
+    font-size: 2.5vmin; /* Optionally reduce font size for button text */
      
   }
 
@@ -849,13 +852,13 @@ width: 50%;
     flex-direction: column;
     align-items: center;
     width: 400px;
-    margin-top: 100px;
+    margin-top: 120px;
     justify-content: center;
     text-align: center;
   
   }
   .heading2>p{
-    font-size: 6vmi;
+    font-size: 3vmin;
     width:300px;
   }
   .phone-image {
@@ -1924,15 +1927,15 @@ display: none; /* Initially hidden */
 .content-section h2 {
   font-size: 6vmin;
   margin-bottom: 20px;
-  color:#002060;
+  color:var(--base-color);
 }
 
 .content-section p {
-  font-size: 3vmin;
+  font-size: 2.3vmin;
   margin-bottom: 20px;
   line-height: 30px;
   margin-right: 10px;
-  color:#002060;
+  color:var(--base-color);
 }
 
 .download-options {
