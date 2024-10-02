@@ -21,7 +21,7 @@ triggerElement:'#right-3',
 triggerHook :0
 })
 .setPin('#right-3')
-.addIndicators()
+
 .addTo(controller)
 new ScrollMagic.Scene({
 
@@ -30,7 +30,7 @@ new ScrollMagic.Scene({
     triggerHook :0
     })
     .setPin('#left-3')
-    .addIndicators()
+   
     .addTo(controller)
 
 }

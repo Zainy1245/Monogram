@@ -75,7 +75,7 @@ body, html {
 #btn2{
 
     background-color:#E5B6A0;
-    padding: 1.5vw 2vw;
+    padding: 1.5vmin 2vmin;
     border-radius: 30px;
     font-size: 2vmin;
 }
@@ -2315,7 +2315,7 @@ display: none; /* Initially hidden */
 /*audio pack*/
 .product-section-audio-p {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 1180px;
   max-width: 1200px;
@@ -2342,20 +2342,20 @@ display: none; /* Initially hidden */
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4vmin;
   color:#fff;
 }
 
 .description-audio-p {
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 2vmin;
   color:#fff;
   line-height: 1.5;
 }
 
 h3 {
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 3vmin;
   color:#fff;
 }
 
